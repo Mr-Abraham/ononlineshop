@@ -1,0 +1,74 @@
+@import './vartiables';
+// Footer Strats
+
+footer{
+    background: #000;
+    padding: 1.5em;
+    .footer-hero{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 1em;
+        ul{
+            li{
+                list-style: none;
+                margin: .5em 0;
+                a{
+                    text-decoration: none;
+                    color: #eee;
+                }
+            }
+        }
+        div{
+            h2{
+                color: #fff;
+                margin-bottom: .5em;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .contact-footer{
+            line-height: 1.5;
+            a{
+                i{
+                    margin-right: .51em;
+                }
+            }
+            .contact-social{
+                margin-top: 1.5em;
+                display: flex;
+                gap: 1.5em;
+                a{
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    transition: .5s ease;
+                    &:nth-child(1){
+                        color: #E36387;
+                    }
+                    &:nth-child(2){
+                        color: #09599b;
+                    }
+                    &:nth-child(3){
+                        color: #22d39e;
+                    }
+                    &:hover{
+                        transform: translate(0px,-5px) scale(1.3);
+                    }
+                }
+            }
+        }
+    }
+    .copyright-footer{
+        padding: 1em;
+        p{
+            color: #eee;
+            text-align: center;
+            word-spacing: .21em;
+            a{
+                text-decoration: none;
+                color: #E36387;
+                font-weight: 600;
+            }
+        }
+    }
+}

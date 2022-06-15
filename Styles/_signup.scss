@@ -1,0 +1,138 @@
+@import './vartiables';
+.signup-container{
+    margin: 3em 1em;
+    .signup-hero{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .signup-image{
+            width: 100%;
+            
+            img{
+                scale: .9;
+            }
+        }
+        .signup-details{
+            width: 100%;
+            padding: 1em 2em;
+            h2{
+                margin-bottom: .75em;
+                i{
+                    color: #ddd;
+                }
+            }
+            form{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                section{
+                    margin: .71em 0;
+                    input{
+                        width: 70%;
+                        border: none;
+                        border-bottom: 1px solid #333;
+                        outline: none;
+                        padding: .2em;
+                        background: none;
+                        caret-color: $lightpink;
+                    }
+                }
+                .gender-section{
+                        width: 100%;
+                        select{
+                            width: 60%;
+                            margin-top: .5em;
+                            background: none;
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            padding: .25em 0;
+                        }
+                    }
+                    .mobile-section{
+                        input[type=number] { 
+                            -moz-appearance: textfield;
+                            appearance: textfield;
+                            margin: 0; 
+                        }
+                    }
+                    .submit-section{
+                        grid-column: 1/-1;
+                        button{
+                            width: 100%;
+                            display: block;
+                            margin: 1em 0;
+                            padding: .5em 1.5em;
+                            background: #000;
+                            outline: none;
+                            border: none;
+                            color: #fff;
+                            font-size: 1em;
+                            cursor: pointer;
+                        }
+                    }
+
+            }
+ 
+        }
+    }
+}
+
+.login-container{
+    margin: 3em 1em;
+    .login-hero{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .signup-image{
+            width: 100%;
+            img{
+                scale: 1.1;
+            }
+        }
+        .login-details{
+            width: 100%;
+            padding: 1em 2em;
+            h2{
+                margin-bottom: .75em;
+                i{
+                    color: #ddd;
+                }
+            }
+            form{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                section{
+                    margin: .71em 0;
+                    input{
+                        width: 70%;
+                        border: none;
+                        border-bottom: 1px solid #333;
+                        outline: none;
+                        padding: .2em;
+                        background: none;
+                        caret-color: $lightpink;
+                    }
+                }
+                    .submit-section{
+                        grid-column: 1/-1;
+                        button{
+                            width: 100%;
+                            display: block;
+                            margin: 1em 0;
+                            padding: .5em 1.5em;
+                            background: #000;
+                            outline: none;
+                            border: none;
+                            color: #fff;
+                            font-size: 1em;
+                            cursor: pointer;
+                        }
+                    }
+
+            }
+ 
+        }
+    }
+}

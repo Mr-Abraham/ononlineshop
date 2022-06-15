@@ -1,0 +1,61 @@
+@import './vartiables';
+
+header{
+    // background-color: aqua;
+    padding: 1em 0;
+    // background: linear-gradient(270deg, #ddd, #ccc, #eee,);
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1em 0;
+        .nav-menu{
+            a{
+                display: inline-block;
+                margin: 0 .9em;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        .cart-navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5em;
+            form{
+                background: #fff;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                width: 100%;
+                input{
+                    height: 35px;
+                    border: none;
+                    outline: none;
+                    padding-left: .3em;
+                    margin-right: 1em;
+                }
+                button{
+                    border: none;
+                    background: #E36387;
+                    color: #fff;
+                    padding: .2em;
+                    outline: none;
+                    height: 35px;
+                    margin: 0;
+                    width: 40px;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: grey;
+                font-size: 1.7em;
+                &:first-of-type{
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+// hero conainer
+
