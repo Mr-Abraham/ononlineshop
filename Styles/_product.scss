@@ -1,0 +1,158 @@
+@import './vartiables';
+@import './swiper';
+
+.product-container{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    // height: 70%;
+    .product-slider{
+        width: 50%;
+        height: 550px;
+        // border: $redborder;
+        padding: 1em;
+        background: transparent;
+        cursor: pointer;
+        .swiper {
+            // border: $blackborder;
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: transparent;
+            
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                .swiper-slide {
+                    figure{
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          }
+                    }
+                }
+              }
+          }
+    }
+    .product-description{
+        width: 45%;
+        line-height: 1.6;
+        h1{
+            color: $lightpink;
+            margin: .5em 0;
+            font-size: 2.5em;
+        }
+        p{
+            margin: .5em 0;
+        }
+        .product__price{
+            margin: .541em 0;
+        }
+        .product__varient{
+            h3{
+                font-size: 1.5em;
+            }
+            .__varients{
+                button{
+                    border: none;
+                    background: none;
+                    padding: .5em 1.5em;
+                    border: 1px solid $lightpink;
+                    margin: 1em .15em;
+                    font-weight: 800;
+                    border-radius: 3px;
+                    transition: all .5s ease;
+                    box-shadow: $shadow;
+                    cursor: pointer;
+                }
+                .active-varient{
+                    background: $lightpink;
+                    color: #fff;
+                }
+            }
+        }
+        .purchase__options{
+            .purchase__optionsBtn{
+                border: none;
+                    background: none;
+                    padding: 1em 1.5em;
+                    border: 1px solid $lightpink;
+                    margin: 1.5em 0;
+                    font-weight: 800;
+                    border-radius: 3px;
+                    transition: all .5s ease;
+                    box-shadow: $shadow;
+                    cursor: pointer;
+            }
+            .addtocartbtn{
+                width: 250px;
+                background: $lightpink;
+                color: #fff;
+            }
+            .buynowbtn{
+                margin-left: 1em;
+            }
+        }
+        .product__highlights{
+            h2{
+                margin-top: .51em;
+            }
+        }
+
+    }
+}
+
+// .similar-products-container{
+//     .swiper {
+//         // border: $blackborder;
+//         width: 100%;
+//         height: 100%;
+//         margin-left: auto;
+//         margin-right: auto;
+//         .swiper-slide {
+//             text-align: center;
+//             font-size: 18px;
+//             background: transparent;
+        
+//             /* Center slide text vertically */
+//             // display: -webkit-box;
+//             // display: -ms-flexbox;
+//             // display: -webkit-flex;
+//             // // display: flex;
+//             -webkit-box-pack: center;
+//             -ms-flex-pack: center;
+//             -webkit-justify-content: center;
+//             justify-content: center;
+//             -webkit-box-align: center;
+//             -ms-flex-align: center;
+//             -webkit-align-items: center;
+//             align-items: center;
+//             .swiper-slide {
+//                 figure{
+//                     img {
+//                         display: block;
+//                         width: 100%;
+//                         height: 100%;
+//                         object-fit: cover;
+//                       }
+//                 }
+//             }
+//           }
+//       }
+// }

@@ -1,84 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>mrabarham</title>
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/lightslider.css">
-    <script type="text/javascript" src="../script/jquery.js"></script>
-    <script type="text/javascript" src="../script/lightslider.js"></script>
-</head>
-<body>
-<header>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OwnOnlineShop</title>
+    <link
+      rel="shortcut icon"
+      href="../Images/Assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../Styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
         <div class="logo">
-            <h2>LOGO</h2>
+          <h2>OwnOnlineShop</h2>
         </div>
         <div class="nav-menu">
-            <a href="./index.html">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Pages</a>
-            <a href="#">Contact</a>
+          <a href="./index.html">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact</a>
         </div>
         <div class="cart-navigation">
-            <form action="">
-                <input type="text">
-                <button id="searchbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <a href="#"><img src="../Images/Assets/cart.png" alt="cart logo"></a>
-            <a href="./login.html"><img src="../Images/Assets/icons8-user-48.png" alt="user logo"></a>
+          <form action="">
+            <input type="text" />
+            <button id="searchbtn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <a href="#"
+            ><img src="../Images/Assets/cart.png" alt="cart logo"
+          /></a>
+          <a href="./login.html"
+            ><img src="../Images/Assets/icons8-user-48.png" alt="user logo"
+          /></a>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
+    <!-- Header ends here -->
+    <div class="product-container">
+      <div class="product-slider">
+        <div class="swiper mySwiper producct-slider_container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="../Images/Products/Oneplus5.png"
+                  alt=" ownOnlineshopProduct image"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="../images/Products/Oneplus9R-1.webp"
+                  alt=" ownOnlineshopProduct image"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="../images/Products/Oneplus9R-2.jpg"
+                  alt=" ownOnlineshopProduct image"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="../images/Products/Oneplus9R-3.png"
+                  alt=" ownOnlineshopProduct image"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="../images/Products/Oneplus9R-4.png"
+                  alt=" ownOnlineshopProduct image"
+                />
+              </figure>
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div> -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="product-description">
+        <h1 class="product-heading">Oneplus Nord 9R</h1>
+        <p class="product__detail">
+          Oneplus Nord 9R | 16GB Ram - 512GB ROM | 18.5 Snapdragon Processor |
+          5G
+        </p>
 
-<footer>
-    <div class="footer-hero">
+        <h2 class="product__price">
+          <i class="fa-solid fa-indian-rupee-sign"></i> 35940
+        </h2>
+        <!-- varients container starts -->
+        <div class="product__varient">
+          <h3>Choose Your Varient -</h3>
+          <div class="__varients">
+            <button class="active-varient">8 - 128</button>
+            <button>16 - 512</button>
+          </div>
+        </div>
+        <!-- varients container ends -->
+        <div class="product__highlights">
+          <h2>Product Highlights -</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            ullam? Sequi sed veniam sunt cupiditate. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Est, odit?
+          </p>
+        </div>
+
+        <div class="purchase__options">
+          <button class="addtocartbtn purchase__optionsBtn">Add To Cart</button>
+          <button class="buynowbtn purchase__optionsBtn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Similar Products slider starats -->
+
+    <div class="similar-products-container">
+        <h1>Similar Products</h1>
+        <div class="swiper mySwiper similarProductsSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="similarproduct-img">
+                    <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                </div>
+                <div class="similar-detail">
+                    <p>Sony K-840</p>
+                    <p>Rs 999</p>
+                </div>
+                <div class="purchase-section">
+                    <button class="purchase addtoCart">Add To Cart</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="similar-img">
+                    <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                </div>
+                <div class="similar-detail">
+                    <p>Sony K-840</p>
+                    <p>Rs 999</p>
+                </div>
+                <div class="purchase-section">
+                    <button class="purchase addtoCart">Add To Cart</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="similar-img">
+                    <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                </div>
+                <div class="similar-detail">
+                    <p>Sony K-840</p>
+                    <p>Rs 999</p>
+                </div>
+                <div class="purchase-section">
+                    <button class="purchase addtoCart">Add To Cart</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="similar-img">
+                    <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                </div>
+                <div class="similar-detail">
+                    <p>Sony K-840</p>
+                    <p>Rs 999</p>
+                </div>
+                <div class="purchase-section">
+                    <button class="purchase addtoCart">Add To Cart</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="similar-img">
+                    <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                </div>
+                <div class="similar-detail">
+                    <p>Sony K-840</p>
+                    <p>Rs 999</p>
+                </div>
+                <div class="purchase-section">
+                    <button class="purchase addtoCart">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+    <!-- Similar Products slider ends -->
+
+    <!-- Footer  Starts-->
+    <footer>
+      <div class="footer-hero">
         <div class="about-footer">
-            <h2>Easter</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus adipisci nostrum voluptatibus porro dignissimos qui doloremque, fugit minima id voluptate?</p>
+          <h2>Easter</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+            adipisci nostrum voluptatibus porro dignissimos qui doloremque,
+            fugit minima id voluptate?
+          </p>
         </div>
         <div class="service-footer">
-            <h2>Services</h2>
-            <ul>
-                <li><a href="#">Deals in Devices</a></li>
-                <li><a href="#">Home Decor</a></li>
-                <li><a href="#">Beauty</a></li>
-                <li><a href="#">Health</a></li>
-            </ul>
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Deals in Devices</a></li>
+            <li><a href="#">Home Decor</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
         </div>
         <div class="Cateogaries-footer">
-            <h2>Cateogaries</h2>
-            <ul>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Refurbished Devices</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Accesories</a></li>
-                <li><a href="#">Decoration</a></li>
-                <li><a href="#">Beauty Products</a></li>
-                <li><a href="#">Tickets</a></li>
-            </ul>
+          <h2>Cateogaries</h2>
+          <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Refurbished Devices</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Accesories</a></li>
+            <li><a href="#">Decoration</a></li>
+            <li><a href="#">Beauty Products</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
         </div>
         <div class="contact-footer">
-            <ul>
-                <h2>Contact Us</h2>
-                <li><a href="mailto:mrabraham@thegics.in"> <i class="fa-solid fa-envelope"></i> Email US</a></li>
-                <li><a href="tel:8447377952"> <i class="fa-solid fa-phone"></i> Call Us</a></li>
-                <li><a href="#"> <i class="fa-solid fa-house-chimney-crack"></i>   Kapashera New Delhi</a></li>
-            </ul>
-            <div class="contact-social">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://wa.me/8447377952"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+          <ul>
+            <h2>Contact Us</h2>
+            <li>
+              <a href="mailto:mrabraham@thegics.in">
+                <i class="fa-solid fa-envelope"></i> Email US</a
+              >
+            </li>
+            <li>
+              <a href="tel:8447377952">
+                <i class="fa-solid fa-phone"></i> Call Us</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-house-chimney-crack"></i> Kapashera New
+                Delhi</a
+              >
+            </li>
+          </ul>
+          <div class="contact-social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://wa.me/8447377952"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
         </div>
-    </div>
-    <div class="copyright-footer">
-        <p>Copyright &copy; 2022 | Created By <a href="https://www.thegics.in/" target="_blank">Gics</a></p>
-    </div>
-</footer>
-<!-- Footer ends -->
-</body>
+      </div>
+      <div class="copyright-footer">
+        <p>
+          Copyright &copy; 2022 | Created By
+          <a href="https://www.thegics.in/" target="_blank">Gics</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper2 = new Swiper(".similarProductsSlider", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+    </script>
+  </body>
 </html>
