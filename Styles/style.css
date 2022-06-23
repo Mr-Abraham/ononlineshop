@@ -1060,6 +1060,63 @@ footer .copyright-footer p a {
   bottom: 5px;
 }
 
+.testimonial {
+  padding: 1em;
+}
+
+.testimonial header {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.testimonial header p {
+  position: relative;
+}
+
+.testimonial header p::after {
+  content: '';
+  position: absolute;
+  background: royalblue;
+  inset: 0;
+  width: 200px;
+  height: 1.5px;
+  margin: auto;
+  top: 40px;
+}
+
+.testimonial .testimonial-container {
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.testimonial .testimonial-container .testimonial__box {
+  background: #fff;
+  line-height: 1.4;
+  padding: 1.5em .8em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 2px #eee;
+          box-shadow: 0 0 10px 2px #eee;
+  text-align: center;
+}
+
+.testimonial .testimonial-container .testimonial__box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial .testimonial-container .testimonial__box p {
+  font-size: .8em;
+}
+
+.testimonial .testimonial-container .testimonial__box h5 {
+  margin-top: .81em;
+}
+
 * {
   margin: 0;
   padding: 0;
