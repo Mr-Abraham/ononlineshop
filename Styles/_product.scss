@@ -10,43 +10,39 @@
         width: 50%;
         height: 550px;
         // border: $redborder;
+        // border: $redborder;
         padding: 1em;
         background: transparent;
         cursor: pointer;
         .swiper {
-            // border: $blackborder;
             width: 100%;
             height: 100%;
-            margin-left: auto;
-            margin-right: auto;
             .swiper-slide {
                 text-align: center;
-                font-size: 18px;
-                background: transparent;
-            
-                /* Center slide text vertically */
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-                .swiper-slide {
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        height: 90%;
+        // border: $redborder;
                     figure{
+                        height: 100%;
+                        padding: 1em;
                         img {
-                            display: block;
-                            width: 100%;
                             height: 100%;
-                            object-fit: cover;
                           }
                     }
-                }
+                
               }
           }
     }
@@ -54,7 +50,7 @@
         width: 45%;
         line-height: 1.6;
         h1{
-            color: $lightpink;
+            // color: $lightpink;
             margin: .5em 0;
             font-size: 2.5em;
         }
@@ -73,7 +69,7 @@
                     border: none;
                     background: none;
                     padding: .5em 1.5em;
-                    border: 1px solid $lightpink;
+                    border: 1px solid blue;
                     margin: 1em .15em;
                     font-weight: 800;
                     border-radius: 3px;
@@ -82,8 +78,9 @@
                     cursor: pointer;
                 }
                 .active-varient{
-                    background: $lightpink;
+                    background:  royalblue;
                     color: #fff;
+                    border: none;
                 }
             }
         }
@@ -92,7 +89,7 @@
                 border: none;
                     background: none;
                     padding: 1em 1.5em;
-                    border: 1px solid $lightpink;
+                    border: 1px solid royalblue;
                     margin: 1.5em 0;
                     font-weight: 800;
                     border-radius: 3px;
@@ -102,8 +99,9 @@
             }
             .addtocartbtn{
                 width: 250px;
-                background: $lightpink;
+                background: royalblue;
                 color: #fff;
+                border: none;
             }
             .buynowbtn{
                 margin-left: 1em;
@@ -114,45 +112,54 @@
                 margin-top: .51em;
             }
         }
+        .other-details{
+            section{
+                display: flex;
+                align-items: center;
+                gap: .5em;
+                border-top: 1px solid #ddd;
+                h3{
+                    width: 120px;
+                    border-right: 1px solid #000;
+                    font-size: 1em;
+                }
+                p{
+                    font-size: .9em;
+                    font-weight: thin;
+                }
+
+            }
+        }
 
     }
 }
-
-// .similar-products-container{
-//     .swiper {
-//         // border: $blackborder;
-//         width: 100%;
-//         height: 100%;
-//         margin-left: auto;
-//         margin-right: auto;
-//         .swiper-slide {
-//             text-align: center;
-//             font-size: 18px;
-//             background: transparent;
-        
-//             /* Center slide text vertically */
-//             // display: -webkit-box;
-//             // display: -ms-flexbox;
-//             // display: -webkit-flex;
-//             // // display: flex;
-//             -webkit-box-pack: center;
-//             -ms-flex-pack: center;
-//             -webkit-justify-content: center;
-//             justify-content: center;
-//             -webkit-box-align: center;
-//             -ms-flex-align: center;
-//             -webkit-align-items: center;
-//             align-items: center;
-//             .swiper-slide {
-//                 figure{
-//                     img {
-//                         display: block;
-//                         width: 100%;
-//                         height: 100%;
-//                         object-fit: cover;
-//                       }
-//                 }
-//             }
-//           }
-//       }
-// }
+.similar-product-slider{
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+          }
+    
+      }
+}
