@@ -39,25 +39,23 @@ img{
         }
     }
 }
-
-
-
 // Cateogary section starts --
-
 .cateogary-container{
     padding: 0;
-    padding: 1em .5em;
+    padding: 1em 0;
     cursor: pointer;
     .cateogries{
         display: flex;
         justify-content: center;
         align-items:flex-start;
-        gap: 1em;
+        gap: 1.5em;
         height: 200px;
         object-fit: cover;
+        background: #fff;
         .cateogary-box{
             height: 150px;
             width: 150px;
+            padding: .3em;
             text-align: center;
             img{
                 @include imgagegit;
