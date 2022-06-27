@@ -338,7 +338,68 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
+    <!-- Frequently Asked Questions ?? -->
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-wrapper">
+          <!-- question cotnainer starts here -->
+          <div class="question-container">
+              <p class="question">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                  <span class="question-btn-toggle"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
+              </p>
+              <div class="answer">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maiores aliquam debitis exercitationem iure molestias.</p>
+              </div>
+          </div>
+          <!-- question cotnainer ends here -->
+          <!-- question cotnainer starts here -->
+          <div class="question-container">
+              <p class="question">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                  <span class="question-btn-toggle"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
+              </p>
+              <div class="answer">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maiores aliquam debitis exercitationem iure molestias.</p>
+              </div>
+          </div>
+          <!-- question cotnainer ends here -->
+          <!-- question cotnainer starts here -->
+          <div class="question-container">
+              <p class="question">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                  <span class="question-btn-toggle"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
+              </p>
+              <div class="answer">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maiores aliquam debitis exercitationem iure molestias.</p>
+              </div>
+          </div>
+          <!-- question cotnainer ends here -->
+                      <!-- question cotnainer starts here -->
+                      <div class="question-container">
+                          <p class="question">
+                              Lorem ipsum dolor sit amet consectetur adipisicing.
+                              <span class="question-btn-toggle"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
+                          </p>
+                          <div class="answer">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maiores aliquam debitis exercitationem iure molestias.</p>
+                          </div>
+                      </div>
+                      <!-- question cotnainer ends here -->
+                                  <!-- question cotnainer starts here -->
+          <div class="question-container">
+              <p class="question">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                  <span class="question-btn-toggle"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
+              </p>
+              <div class="answer">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores maiores aliquam debitis exercitationem iure molestias.</p>
+              </div>
+          </div>
+          <!-- question cotnainer ends here -->
+      </div>
+  </div>
+<!-- faq ENDS here -->
     <!-- Footer  Starts-->
     <footer>
       <div class="footer-hero">
@@ -428,6 +489,20 @@
           clickable: true,
         },
       });
+      let faqWrapper = document.querySelector('.faq-wrapper')
+    let questionContainer = document.querySelector('.question-container')
+    let answer = document.querySelector('.answer')
+    let toggleBtn = document.querySelectorAll('.question-btn-toggle');
+
+    // console.log(toggleBtn)
+    toggleBtn.forEach((e)=>{
+        e.addEventListener('click',(btn)=>{
+            const parent = btn.currentTarget.parentElement.parentElement;
+            parent.classList.toggle('active-answer');
+            // console.log(e.innerHTML)
+            // e.innerHTML = '<i class="fa-solid fa-minus"></i>';
+        })
+    })
 
     </script>
   </body>

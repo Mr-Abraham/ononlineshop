@@ -1,5 +1,7 @@
 @import './vartiables';
 @import './swiper';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .product-container{
     padding: 1em;
@@ -291,3 +293,86 @@ gap: 1em;
 }
     }
 }
+
+.faq-container{
+    position: relative;
+    padding: 2em;
+    h1{
+        text-align: center;
+        margin-bottom: .75em;
+        font-family: 'Great Vibes', cursive;
+        color:tomato;
+        font-size: 5vw;
+        word-spacing: 2px;
+        position: relative;
+
+        &::after{
+            content: '';
+            // posi
+            background: teal;
+            position: absolute;
+            inset: 0;
+            height: 1.2px;
+            width: 20%;
+            margin: auto;
+            top: 120%;
+        }
+    }
+    .faq-wrapper{
+        /* border: 1px solid #000; */
+        margin: auto;
+        max-width: 620px;
+        .question-container{
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: .5em 0;
+            padding: 1em;
+            line-height: 1.5;
+            box-shadow: 0 0 5px 1px #eee;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;;
+            .question{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: .5em 0;
+                line-height: 1.1;
+                .question-btn-toggle{
+                    font-weight: 600;
+                    font-size: 1.7em;
+                    padding: .3em;
+                    display: grid;
+                    place-items: center;
+                    width: 30px;
+                    height: 30px;
+                    i{
+                        position: absolute;
+                    }
+                }
+            }
+            .answer{
+                height: 0;
+                overflow: hidden;
+                transition: .51s ease;
+            }
+        }
+        .active-answer{
+            .answer{
+                height: 55px;
+            }
+            .fa-plus{
+                display: none;
+            }
+        }
+    }
+}
+
+// .active-answer{
+//     .answer{
+//         height: 100%;
+//     }
+// .fa-plus{
+//     display: none;
+// }
+
+// }
