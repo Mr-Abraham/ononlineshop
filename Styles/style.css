@@ -915,28 +915,6 @@ footer .copyright-footer p a {
   margin-top: .51em;
 }
 
-.product-container .product-description .other-details section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .5em;
-  border-top: 1px solid #ddd;
-}
-
-.product-container .product-description .other-details section h3 {
-  width: 120px;
-  border-right: 1px solid #000;
-  font-size: 1em;
-}
-
-.product-container .product-description .other-details section p {
-  font-size: .9em;
-  font-weight: thin;
-}
-
 .similar-product-slider {
   padding: 1em;
   margin: 1em .2em;
