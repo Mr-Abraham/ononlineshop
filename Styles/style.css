@@ -1185,6 +1185,51 @@ footer .copyright-footer p a {
   display: none;
 }
 
+.feedback-container {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+}
+
+.feedback-container h1 {
+  margin-bottom: 1em;
+}
+
+.feedback-container .feedback_section {
+  max-width: 100%;
+  margin: auto;
+  width: 80%;
+}
+
+.feedback-container .feedback_section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .51em;
+}
+
+.feedback-container .feedback_section form .feedback__input {
+  width: 70%;
+}
+
+.feedback-container .feedback_section form .feedback__input input {
+  padding: 1em;
+  width: 100%;
+}
+
+.feedback-container .feedback_section form .feedback__submit button {
+  background: mediumseagreen;
+  border: none;
+  outline: none;
+  padding: 1em;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

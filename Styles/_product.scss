@@ -357,3 +357,42 @@ gap: 1em;
 // }
 
 // }
+.feedback-container{
+// border:1px solid red;
+background: rgba(255,255,255,.5);
+padding: 1em;
+h1{
+    margin-bottom: 1em;
+}
+.feedback_section{
+    // border: 1px solid #fff;
+    max-width: 100%;
+    margin: auto;
+    width: 80%;
+    form{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .51em;
+    .feedback__input{
+        width: 70%;
+        input{
+            padding: 1em;
+            width: 100%;
+            // border: 1px solid red;
+
+        }
+    }
+    .feedback__submit{
+        // width: 100%;
+        button{
+            background: mediumseagreen;
+            border: none;
+            outline: none;
+            padding: 1em;
+            color: #fff;
+        }
+    }
+    }
+}
+}
